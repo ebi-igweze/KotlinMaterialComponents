@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main content container -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.igweze.ebi.kotlinmaterialcomponents.MainActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextColor="@color/textColorPrimary" />
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.design.widget.CoordinatorLayout
+                android:id="@+id/coordinator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/navText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:textSize="24sp"
+                        android:gravity="center"
+                        app:layout_constraintBottom_toTopOf="@id/showSnackBarBtn"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <Button
+                        android:id="@+id/showSnackBarBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Simple SnackBar"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                    <Button
+                        android:id="@+id/showSnackBarBtnWithAction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="30dp"
+                        android:text="SnackBar With Action"
+                        app:layout_constraintTop_toBottomOf="@id/showSnackBarBtn"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_done"
+                    android:layout_margin="16dp"
+                    android:layout_gravity="bottom|end"/>
+
+            </android.support.design.widget.CoordinatorLayout>
+
+            <!-- Main Navigation -->
+            <android.support.design.widget.NavigationView
+                android:id="@+id/navDrawer"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                app:headerLayout="@layout/header"
+                app:itemIconTint="#8C000000"
+                app:itemTextColor="#E6000000"
+                app:menu="@menu/menu_items_nav"
+                />
+
+            <!--
+                Guide lines:
+                    icon tint = 54% black (#000000)
+                    text color = 87% black (#000000)
+            -->
+        </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
+

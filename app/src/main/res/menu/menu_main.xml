@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/showIndividual"
+        android:title="Show menu as items"
+        app:showAsAction="never"
+        android:orderInCategory="101" />
+
+    <item android:id="@+id/showGroup"
+        android:title="Show menu as group"
+        app:showAsAction="never"
+        android:orderInCategory="100" />
+
+    <item android:id="@+id/showGroupHeader"
+        android:title="Show menu group with header"
+        app:showAsAction="never"
+        android:orderInCategory="102" />
+</menu>

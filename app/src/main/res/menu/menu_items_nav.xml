@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group 
+        android:id="@+id/menuItemsOnly"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/item_android"
+            android:icon="@drawable/ic_android"
+            android:title="Android" />
+
+        <item
+            android:id="@+id/item_ios"
+            android:icon="@drawable/ic_ios"
+            android:title="ios" />
+
+        <item
+            android:id="@+id/item_windows"
+            android:icon="@drawable/ic_windows"
+            android:title="Windows" />
+
+        <item
+            android:id="@+id/item_blackberry"
+            android:icon="@drawable/ic_blackberry"
+            android:title="Blackberry" />
+
+        <item
+            android:id="@+id/item_ionic"
+            android:icon="@drawable/ic_ionic"
+            android:title="Ionic" />
+
+        <item
+            android:id="@+id/item_css"
+            android:icon="@drawable/ic_css"
+            android:title="CSS" />
+
+        <item
+            android:id="@+id/item_material"
+            android:icon="@drawable/ic_material"
+            android:title="Material" />
+
+        <item
+            android:id="@+id/item_html"
+            android:icon="@drawable/ic_html"
+            android:title="HTML" />
+
+        <item
+            android:id="@+id/item_web"
+            android:icon="@drawable/ic_web"
+            android:title="Web" />
+
+        <item
+            android:id="@+id/item_ruby"
+            android:icon="@drawable/ic_ruby"
+            android:title="Ruby" />
+
+        <item
+            android:id="@+id/item_php"
+            android:icon="@drawable/ic_php"
+            android:title="PHP" />
+
+        <item
+            android:id="@+id/item_python"
+            android:icon="@drawable/ic_python"
+            android:title="Python" />
+
+    </group>
+
+    <!-- Items are grouped -->
+    <group
+        android:id="@+id/menuItemGroup">
+
+        <group
+            android:id="@+id/mobileGroup"
+            android:visible="false"
+            android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/group_item_android"
+                android:icon="@drawable/ic_android"
+                android:title="Android" />
+
+            <item
+                android:id="@+id/group_item_ios"
+                android:icon="@drawable/ic_ios"
+                android:title="ios" />
+
+            <item
+                android:id="@+id/group_item_windows"
+                
+                android:icon="@drawable/ic_windows"
+                android:title="Windows" />
+
+            <item
+                android:id="@+id/group_item_blackberry"
+                
+                android:icon="@drawable/ic_blackberry"
+                android:title="Blackberry" />
+
+            <item
+                android:id="@+id/group_item_ionic"
+                android:icon="@drawable/ic_ionic"
+                android:title="Ionic" />
+
+        </group>
+
+        <group
+            android:id="@+id/webFrontendGroup"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/group_item_css"
+                android:icon="@drawable/ic_css"
+                android:title="CSS" />
+
+            <item
+                android:id="@+id/group_item_material"
+                android:icon="@drawable/ic_material"
+                android:title="Material" />
+
+            <item
+                android:id="@+id/group_item_html"
+                android:icon="@drawable/ic_html"
+                android:title="HTML" />
+
+            <item
+                android:id="@+id/group_item_web"
+                android:icon="@drawable/ic_web"
+                android:title="Web" />
+
+        </group>
+
+        <group android:id="@+id/webBackendGroup"
+            android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/group_item_ruby"
+                android:icon="@drawable/ic_ruby"
+                android:title="Ruby" />
+
+            <item
+                android:id="@+id/group_item_php"
+                android:icon="@drawable/ic_php"
+                android:title="PHP" />
+
+            <item
+                android:id="@+id/group_item_python"
+                android:icon="@drawable/ic_python"
+                android:title="Python" />
+        </group>
+    </group>
+
+    <!-- Items with header and sub items -->
+    <group
+        android:id="@+id/menuItemHeader">
+
+        <item
+            android:id="@+id/mobileGroupItem"
+            android:title="Mobile"
+            android:checkableBehavior="single">
+
+            <menu>
+
+                <item
+                    android:id="@+id/header_item_android"
+                    android:icon="@drawable/ic_android"
+                    android:title="Android" />
+
+                <item
+                    android:id="@+id/header_item_ios"
+                    android:icon="@drawable/ic_ios"
+                    android:title="ios" />
+
+                <item
+                    android:id="@+id/header_item_windows"
+
+                    android:icon="@drawable/ic_windows"
+                    android:title="Windows" />
+
+                <item
+                    android:id="@+id/header_item_blackberry"
+
+                    android:icon="@drawable/ic_blackberry"
+                    android:title="Blackberry" />
+
+                <item
+                    android:id="@+id/header_item_ionic"
+                    android:icon="@drawable/ic_ionic"
+                    android:title="Ionic" />
+
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/webFrontendGroupItem"
+            android:title="Web Frontend"
+            android:checkableBehavior="single">
+            <menu>
+                <item
+                    android:id="@+id/header_item_css"
+                    android:icon="@drawable/ic_css"
+                    android:title="CSS" />
+
+                <item
+                    android:id="@+id/header_item_material"
+                    android:icon="@drawable/ic_material"
+                    android:title="Material" />
+
+                <item
+                    android:id="@+id/header_item_html"
+                    android:icon="@drawable/ic_html"
+                    android:title="HTML" />
+
+                <item
+                    android:id="@+id/header_item_web"
+                    android:icon="@drawable/ic_web"
+                    android:title="Web" />
+            </menu>
+        </item>
+
+        <item android:id="@+id/webBackendGroupItem"
+            android:title="Web Backend"
+            android:checkableBehavior="single">
+
+            <menu>
+                <item
+                    android:id="@+id/header_item_ruby"
+                    android:icon="@drawable/ic_ruby"
+                    android:title="Ruby" />
+
+                <item
+                    android:id="@+id/header_item_php"
+                    android:icon="@drawable/ic_php"
+                    android:title="PHP" />
+
+                <item
+                    android:id="@+id/header_item_python"
+                    android:icon="@drawable/ic_python"
+                    android:title="Python" />
+            </menu>
+        </item>
+    </group>
+</menu>
