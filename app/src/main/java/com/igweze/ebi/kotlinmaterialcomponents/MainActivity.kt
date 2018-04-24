@@ -68,6 +68,32 @@ class MainActivity : AppCompatActivity() {
             hideDrawer()
             true
         }
+
+        // form submit listener
+        submitBtn.setOnClickListener {
+
+            // check if the user name is valid
+            val validateUser =  if (userName.text.isEmpty()) {
+                userNameLayout.error = "Username cannot be blank"
+                false
+            } else {
+                userNameLayout.isErrorEnabled = false
+                true
+            }
+
+            // check if the password is valid
+            val validatePassword = if (password.text.length < 8) {
+                passwordLayout.error = "Password cannot be less than 8 characters"
+                false
+            } else {
+                passwordLayout.isErrorEnabled = false
+                true
+            }
+
+            // show snackBar if both are valid
+            if (validateUser && validatePassword)
+                Snackbar.make(it, "Successfully Logged in", Snackbar.LENGTH_LONG).show()
+        }
     }
 
     private fun hideDrawer() {
