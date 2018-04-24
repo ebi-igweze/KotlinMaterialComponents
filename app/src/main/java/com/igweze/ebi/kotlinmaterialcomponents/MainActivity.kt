@@ -94,6 +94,9 @@ class MainActivity : AppCompatActivity() {
             if (validateUser && validatePassword)
                 Snackbar.make(it, "Successfully Logged in", Snackbar.LENGTH_LONG).show()
         }
+
+        // collapsingToolbar
+        collapsingToolbar.title = "Collapsing Toolbar"
     }
 
     private fun hideDrawer() {
